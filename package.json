@@ -1,0 +1,52 @@
+{
+  "name": "grunt-react-base",
+  "version": "0.0.0",
+  "description": "A base for further development, using React, Grunt and Browserify",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brentertz/react-tutorial-grunt-browserify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brentertz/react-tutorial-grunt-browserify/issues"
+  },
+  "homepage": "https://github.com/shaundaley39/grunt-react-base",
+  "author": "Shaun Daley <shaundaley39@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "NODE_CONFIG_DIR=./server/config node ./server/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "config": "^1.20.1",
+    "dev": "^0.1.3",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "reactify": "^1.1.1",
+    "babel-core": "^6.7.6",
+    "babel-plugin-transform-react-jsx": "^6.7.5",
+    "envify": "^3.4.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jsxhint": "^0.8.0",
+    "grunt-nodemon": "^0.4.1",
+    "load-grunt-tasks": "^3.5.0",
+    "showdown": "^1.3.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
