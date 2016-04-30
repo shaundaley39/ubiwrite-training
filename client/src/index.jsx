@@ -51,10 +51,11 @@ var Pangram = React.createClass({
     const letter = `${String.fromCharCode(e.charCode)}`;
     var newLetters = letters.slice(0);
     if(letter === letters[0]) {
-      this.refs['hands'].setCharacter(newLetters[0]);
       newLetters.splice(0, 1);
+      this.refs['speed'].completed(1);
     }
     if(newLetters.length > 0){
+      this.refs['hands'].setCharacter(newLetters[0]);
       this.setState({letters: newLetters});
     } else {
       newLetters = this.getTarget();
@@ -131,6 +132,7 @@ var Pangram = React.createClass({
         }
       </TransitionSpring>
         <div id="hand-holder"> <Hands ref="hands" character={this.state.letters[0]} /></div>
+        <Speed ref="speed" />
       </div>
     );
   }
@@ -182,6 +184,35 @@ var Hands = React.createClass({
           </svg>
       </div>
     );
+  }
+});
+
+var Speed = React.createClass({
+  getInitialState: function(){
+    var d = new Date();
+    return {
+      start: d.getTime(),
+      charcount: 0
+    };
+  },
+  completed: function( numCompleted){
+    const {charcount} = this.state;
+    this.setState({charcount : numCompleted + charcount});
+  },
+  render(){
+    const {start, charcount} = this.state;
+    var d = new Date();
+    var finish = d.getTime();
+    var cpm = Math.round( 60000.0*charcount/(finish - start));
+    if (charcount < 30){
+      return (
+        <h3 className="text" id="speed">Speed: unknown </h3>
+      );
+    } else {
+      return (
+        <h3 className="text" id="speed">Speed: {cpm} cpm</h3>
+      );
+    }
   }
 });
 
