@@ -16,7 +16,7 @@
 
 \* a more sober analysis might find Ubiwrite gloves tragically unfashionable
 
-This site is build to help people get up that learning curve - quickly learning the mapping between finger contact points and keys, and then achieving a high type speed with Ubiwrite.
+This site is built to help people get up that learning curve - quickly learning the mapping between finger contact points and keys, and then achieving a high type speed with Ubiwrite.
 
 See: [Demo](http://shaundaley39.github.io/ubiwrite-training/)
 
