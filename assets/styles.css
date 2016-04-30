@@ -1,0 +1,102 @@
+/* line 1, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\000031}}
+body {
+  padding: 0;
+  margin: 0;
+}
+/* line 6, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\000036}}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: #4D4F7D;
+}
+/* line 12, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000312}}
+a {
+  color: #4D4F7D;
+  text-decoration: underline;
+}
+/* line 17, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000317}}
+a:hover {
+  color: #A8A9D1;
+}
+/* line 21, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000321}}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10px;
+  background-color: #000445;
+}
+/* line 37, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000337}}
+.title {
+  font-weight: 600;
+  font-size: 18px;
+}
+/* line 42, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000342}}
+.text {
+  font-size: 14px;
+}
+/* line 46, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000346}}
+.letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* line 53, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000353}}
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+  background: #4D4F7D;
+  border-radius: 50px;
+  color: #fff;
+}
+/* line 73, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000373}}
+#hands {
+  display: inline-block;
+}
+/* line 76, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000376}}
+#hand-holder {
+  text-align: center;
+  height: 180px;
+}
+/* line 80, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000380}}
+.hidden {
+  display: none;
+}
+/* line 83, ./client/src/styles.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\.\/client\/src\/styles\.less}line{font-family:\0000383}}
+#speed {
+  text-align: center;
+}
+/*# sourceMappingURL=./client/build/assets/styles.css.map */
