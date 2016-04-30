@@ -10,7 +10,8 @@ module.exports = function(grunt) {
   grunt.config('browserify', {
     options: {
       debug: debug,
-      watch: true
+      watch: true,
+      transform: [['babelify', { presets: ["react", "es2015"] }]]
     },
     app: {
       files: [
